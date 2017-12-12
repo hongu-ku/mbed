@@ -16,6 +16,9 @@
 void show(int n, int ms);
 
 Serial pc(USBTX, USBRX);
+BusOut leds(dp18/*6*/,dp25/*8*/,dp26/*9*/,dp1/*12*/);
+BusOut segments(dp2/*A-11*/,dp13/*B-7*/,dp11/*C-4*/,dp10/*D-2*/,dp9/*E-1*/,dp6/*F-10*/,dp4/*G-5*//*DP-3*/);
+
 int thousand, handred, ten, one;
 int number[11] = {n0,n1,n2,n3,n4,n5,n6,n7,n8,n9,ZERO};
 // ダイナミック点灯のプログラム
