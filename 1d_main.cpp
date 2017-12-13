@@ -35,7 +35,7 @@ int main() {
 void show(int n, int ms/*何ms表示するか*/){
     if(n>=0 && n<10000){
       segments = ~number[n];
-      wait_ms(400);
+      wait_ms(ms);
         }
     }
 }
