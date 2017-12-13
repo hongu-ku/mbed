@@ -23,9 +23,10 @@ int number[11] = {n0,n1,n2,n3,n4,n5,n6,n7,n8,n9,ZERO};
 // 1桁だけ光らせるプログラム
 int main() {
   led = 1;
+  int i;
   segments = ~number[10]
   while(1) {
-    for(int i = 0; i < 10; i++) {
+    for(i = 0; i < 10; i++) {
       show(i,400);
     }
   }
